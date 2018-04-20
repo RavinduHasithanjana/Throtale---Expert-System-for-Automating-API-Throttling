@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/MLTests/ParameterTunningSVR.py" />
-      <change beforePath="$PROJECT_DIR$/MLTests/SVMRegression.py" afterPath="$PROJECT_DIR$/MLTests/SVMRegression.py" />
-    </list>
+    <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -154,21 +151,6 @@
             <path>
               <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="b2602c69:ProjectViewProjectNode" />
               <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="462c0819:PsiDirectoryNode" />
-              <item name="LogsExtraction" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="462c0819:PsiDirectoryNode" />
-              <item name="MLTests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="462c0819:PsiDirectoryNode" />
-              <item name="ThrotaleMLSystem" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
