@@ -1,0 +1,6 @@
+# Throtale---Expert-System-for-Automating-API-Throttling
+
+Abstract 
+API’s (Application programming Interfaces) are widely used and created in the Software Industry by Software developers, which will help developers to develop software faster and more efficiently. With the wide use of API’s, a mechanism called API throttling is used by API developers in order to regulate the request traffic of the API and also to protect the API’s from common type of attacks such as (Ddos). In the existing manual throttling mechanism is done manually by fixing a fixed amount for the rate of request, this existing approach of rate limiting can lead in to different problems to developers as they will have to change the rate constantly and calculating the rate may also be difficult these are some of the common problems the developers face when using.
+
+The Proposed system is a Machine learning (Support vector machines) approach which will predict the rate for rate limiting in throttling and it will dynamically change as the current time changes, the prediction is made by gathering historical data of the requests sent to the API. The Solution is a fully Automated API throttling system which handles the request and developers will have no problem as manual throttling. 
