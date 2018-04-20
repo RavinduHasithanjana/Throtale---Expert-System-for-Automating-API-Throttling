@@ -4,6 +4,7 @@ import pandas as pd
 import numpy
 from sklearn import svm
 from sklearn.model_selection import train_test_split,GridSearchCV
+from sklearn.metrics import accuracy_score
 
 # using pandas get the occuring no and the count for the data set
 
@@ -38,6 +39,16 @@ parameters = [{'kernel': ['rbf'],
 
 clf = GridSearchCV(svm.SVC(decision_function_shape='ovr'), parameters, cv=5)
 clf.fit(X_train, y_train)
+
+pred = clf.predict(X_test)
+
+print(pred)
+
+acc = accuracy_score(pred,y_test)
+
+print(acc)
+
+print("/////////////////////////////////")
 
 print(clf.best_params_)
 print()
