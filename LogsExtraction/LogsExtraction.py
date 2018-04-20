@@ -2,10 +2,7 @@
 # Authour Ravindu Perera
 import re
 import datetime
-import platform
-import csv
 import time
-import pandas
 import numpy
 
 
@@ -14,7 +11,6 @@ def main():
 
 
 def LogsExtraction():
-    # match_record = re.compile(b"[A-Za-z]").match
     strptime = datetime.datetime.strptime
     arrayone = []
     f = open("/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/test.txt", "rb")  # orginal set of log files
@@ -22,7 +18,6 @@ def LogsExtraction():
 
     for line in f:
      match = re.search(r'((\d\d/\w{3}/\d{4}:\d{2}:\d{2}:\d{2}))', line.decode('utf-8'))
-     #print(match.group())
      str_time = match.group()
      t1 = strptime(str_time, "%d/%b/%Y:%H:%M:%S")
      ls = float(time.mktime(t1.timetuple()))
@@ -37,8 +32,7 @@ def LogsExtraction():
     print(arrayone)
     print(arrayone)
     numpy.savetxt("/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv", arrayone, delimiter=",")
-     #print(time.year + time.month) # create and csv format with the following way
-     # logMessage(time)
+
 
 
 
