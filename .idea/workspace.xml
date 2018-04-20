@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/MLTests/SVMRegression.py" afterPath="$PROJECT_DIR$/MLTests/SVMRegression.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,11 +29,9 @@
       <file leaf-file-name="SVMClassification.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLTests/SVMClassification.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="24" />
-              <folding>
-                <element signature="e#66#85#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -52,8 +51,8 @@
       <file leaf-file-name="SVMRegression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLTests/SVMRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="176">
+              <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
               <folding>
                 <element signature="e#66#85#0" expanded="true" />
               </folding>
@@ -72,7 +71,7 @@
         </entry>
       </file>
       <file leaf-file-name="ThrotaleML.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ThrotaleML/ThrotaleML.py">
+        <entry file="file://$PROJECT_DIR$/ThrotaleMLSystem/ThrotaleML.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -158,7 +157,7 @@
             <path>
               <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="b2602c69:ProjectViewProjectNode" />
               <item name="Throtale---Expert-System-for-Automating-API-Throttling" type="462c0819:PsiDirectoryNode" />
-              <item name="ThrotaleML" type="462c0819:PsiDirectoryNode" />
+              <item name="ThrotaleMLSystem" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -330,15 +329,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLTests/ParameterTunningSVM.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ThrotaleML/ThrotaleML.py">
+    <entry file="file://$PROJECT_DIR$/ThrotaleMLSystem/ThrotaleML.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -356,20 +347,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLTests/SVMClassification.py">
+    <entry file="file://$PROJECT_DIR$/MLTests/ParameterTunningSVM.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="24" />
-          <folding>
-            <element signature="e#66#85#0" expanded="true" />
-          </folding>
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLTests/SVMClassification.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MLTests/SVMRegression.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="176">
+          <caret line="24" column="14" lean-forward="true" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
           <folding>
             <element signature="e#66#85#0" expanded="true" />
           </folding>
