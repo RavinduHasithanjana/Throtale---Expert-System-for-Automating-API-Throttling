@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/LogFiles/ExtractedData.csv" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/LogsExtraction/LogsExtraction.py" afterPath="$PROJECT_DIR$/LogsExtraction/LogsExtraction.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,7 +16,7 @@
       <file leaf-file-name="Testpy.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Testpy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
+            <state relative-caret-position="0">
               <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogsExtraction.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LogsExtraction.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LogsExtraction/LogsExtraction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="630">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
                 <element signature="e#66#75#0" expanded="true" />
               </folding>
@@ -60,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/LogFiles/logs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+              <caret line="0" column="39" lean-forward="true" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -130,13 +129,13 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Testpy.py" />
-        <option value="$PROJECT_DIR$/LogsExtraction/LogsExtraction.py" />
         <option value="$PROJECT_DIR$/ThrotaleML/ThrotaleML.py" />
         <option value="$PROJECT_DIR$/MLTests/SVMClassification.py" />
         <option value="$PROJECT_DIR$/MLTests/SVMRegression.py" />
         <option value="$PROJECT_DIR$/MLTests/ParameterTunningSVR.py" />
         <option value="$PROJECT_DIR$/MLTests/ParameterTunningSVM.py" />
         <option value="$PROJECT_DIR$/LogFiles/logs" />
+        <option value="$PROJECT_DIR$/LogsExtraction/LogsExtraction.py" />
       </list>
     </option>
   </component>
@@ -356,7 +355,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Testpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
+        <state relative-caret-position="0">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
@@ -370,16 +369,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="60" selection-end-column="36" />
           <folding>
             <element signature="e#66#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LogsExtraction/LogsExtraction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding>
-            <element signature="e#66#75#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -431,8 +420,26 @@
     <entry file="file://$PROJECT_DIR$/LogFiles/logs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="64" lean-forward="false" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="64" />
+          <caret line="0" column="39" lean-forward="true" selection-start-line="0" selection-start-column="39" selection-end-line="0" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharmCE2017.3/python_stubs/-1556510107/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="472" column="4" lean-forward="false" selection-start-line="472" selection-start-column="4" selection-end-line="472" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LogsExtraction/LogsExtraction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="e#66#75#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

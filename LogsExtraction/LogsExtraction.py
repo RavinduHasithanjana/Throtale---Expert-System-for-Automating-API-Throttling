@@ -42,20 +42,4 @@ def LogsExtraction():
 
 
 
-
-# def logMessage():
-#     print("work")
-#     with open('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/logs.txt', 'r') as in_file:
-#         stripped = (line.strip() for line in in_file)
-#
-#         print(stripped)
-#         lines = (line.split() for line in stripped if line)
-#         with open('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/logs.csv', 'w') as out_file:
-#             writer = csv.writer(out_file)
-#             writer.writerow(('title'))
-#             writer.writerows(lines)
-
-def counting():
-    print()
-
 if __name__ == '__main__': main()
