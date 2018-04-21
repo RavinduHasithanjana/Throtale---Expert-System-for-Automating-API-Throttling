@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MLTests/SVMClassification.py" afterPath="$PROJECT_DIR$/MLTests/SVMClassification.py" />
-      <change beforePath="$PROJECT_DIR$/MLTests/SVMRegression.py" afterPath="$PROJECT_DIR$/MLTests/SVMRegression.py" />
-    </list>
+    <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
