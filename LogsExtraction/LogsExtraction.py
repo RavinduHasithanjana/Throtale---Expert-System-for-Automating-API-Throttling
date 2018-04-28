@@ -18,6 +18,7 @@ def LogsExtraction():
 
     for line in f:
      match = re.search(r'((\d\d/\w{3}/\d{4}:\d{2}:\d{2}:\d{2}))', line.decode('utf-8'))
+     print(match)
      str_time = match.group()
      t1 = strptime(str_time, "%d/%b/%Y:%H:%M:%S")
      ls = float(time.mktime(t1.timetuple()))

@@ -14,15 +14,15 @@ df = pd.read_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvf
 # df.groupby([0]).size().reset_index(name="count").to_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv')
 cc = df.groupby([0]).size().reset_index(name="count")
 
-# print(cc.iloc[:,1])
+print(cc)
 
 data = numpy.array(cc.iloc[:,0]).astype(float)
 target = numpy.array(cc.iloc[:,-1]).astype(float)
 # print(data.shape)
 # print(target.shape)
 # #
-X = data[:9000]
-y = target[:9000]
+X = data[:500]
+y = target[:500]
 
 # print(X)
 # print(y)
@@ -34,7 +34,7 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 parameters = [{'kernel': ['rbf'],
                'gamma': [1e-4, 1e-3, 0.01, 0.1, 0.2, 0.5],
-                'C': [1, 10, 100, 1000]},{'kernel': ['linear'], 'C': [1, 10, 100, 1000]}]
+                'C': [1, 10, 100, 1000]},]
 
 
 clf = GridSearchCV(svm.SVC(decision_function_shape='ovr'), parameters, cv=5)
