@@ -7,6 +7,7 @@ from sklearn import svm
 from sklearn.model_selection import train_test_split,GridSearchCV
 from sklearn.metrics import explained_variance_score
 from sklearn.metrics import mean_squared_error
+from sklearn.externals import joblib
 
 def readcsv ():
     df = pd.read_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv', header=None)
@@ -31,14 +32,17 @@ def regressionalgo (cc):
 
     clf = svm.SVR()
     clf.fit(X_train,y_train)
-    SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='auto',
+    SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='0.2',
         kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
     pred = clf.predict(X_test)
 
     # print(pred)
     mean = mean_squared_error(y_test, pred)
     print(mean)
+    savingmodel(clf)
 
-
+def savingmodel(clf):
+    print("")
+    joblib.dump(clf, 'throtale.pkl')
 
 if __name__ == '__main__': readcsv()

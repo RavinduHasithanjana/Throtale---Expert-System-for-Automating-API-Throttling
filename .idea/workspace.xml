@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="758fdea8-42e7-4e2c-bc14-30bcee36f90c" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/MLTests/ParameterTunningSVR.py" afterPath="$PROJECT_DIR$/MLTests/ParameterTunningSVR.py" />
+      <change beforePath="$PROJECT_DIR$/MLTests/SVMRegression.py" afterPath="$PROJECT_DIR$/MLTests/SVMRegression.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SVMRegression.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SVMRegression.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MLTests/SVMRegression.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+            <state relative-caret-position="536">
+              <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
               <folding>
                 <element signature="e#66#85#0" expanded="true" />
               </folding>
@@ -72,11 +71,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParameterTunningSVR.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParameterTunningSVR.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/MLTests/ParameterTunningSVR.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="446">
+              <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -139,8 +138,8 @@
         <option value="$PROJECT_DIR$/LogsExtraction/LogsExtraction.py" />
         <option value="$PROJECT_DIR$/LogsExtraction/test_logsExtraction.py" />
         <option value="$PROJECT_DIR$/MLTests/SVMClassification.py" />
-        <option value="$PROJECT_DIR$/MLTests/SVMRegression.py" />
         <option value="$PROJECT_DIR$/MLTests/ParameterTunningSVR.py" />
+        <option value="$PROJECT_DIR$/MLTests/SVMRegression.py" />
       </list>
     </option>
   </component>
@@ -231,7 +230,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.ParameterTunningSVR">
+  <component name="RunManager" selected="Python.SVMRegression">
     <configuration name="LogsExtraction" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -331,8 +330,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.ParameterTunningSVR" />
-        <item index="1" class="java.lang.String" itemvalue="Python.SVMRegression" />
+        <item index="0" class="java.lang.String" itemvalue="Python.SVMRegression" />
+        <item index="1" class="java.lang.String" itemvalue="Python.ParameterTunningSVR" />
         <item index="2" class="java.lang.String" itemvalue="Python.SVMClassification" />
         <item index="3" class="java.lang.String" itemvalue="Python.LogsExtraction" />
         <item index="4" class="java.lang.String" itemvalue="Python.ParameterTunningSVM" />
@@ -805,16 +804,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/MLTests/SVMRegression.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="35" column="30" lean-forward="true" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-          <folding>
-            <element signature="e#66#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MLTests/MLTrainDecisionTrees/DecisionTreeClassification.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -825,10 +814,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MLTests/ParameterTunningSVR.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+        <state relative-caret-position="446">
+          <caret line="36" column="11" lean-forward="true" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MLTests/SVMRegression.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="45" column="36" lean-forward="true" selection-start-line="45" selection-start-column="36" selection-end-line="45" selection-end-column="36" />
+          <folding>
+            <element signature="e#66#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
