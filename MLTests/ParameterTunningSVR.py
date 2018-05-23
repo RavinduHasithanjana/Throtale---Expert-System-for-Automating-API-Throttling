@@ -16,8 +16,8 @@ def parameterTunning (formatData):
     dataData = numpy.array(formatData.iloc[:, 0]).astype(float)
     targetData = numpy.array(formatData.iloc[:, -1]).astype(float)
 
-    X = dataData[:400]
-    y = targetData[:400]
+    X = dataData[:1000]
+    y = targetData[:1000]
 
 
     X_train, X_test, y_train, y_test = train_test_split(

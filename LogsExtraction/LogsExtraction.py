@@ -25,14 +25,15 @@ def LogsExtraction():
      # val = float(ls)
      secondval = time.mktime(t1.timetuple())
 
-     print(ls)
+     # print(ls)
      arrayone.append(ls)
      # fo.write(ls)
 
     # logMessage()
     print(arrayone)
-    print(arrayone)
-    numpy.savetxt("/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv", arrayone, delimiter=",")
+    # print("print")
+    # print(arrayone)
+    numpy.savetxt("/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv", arrayone, delimiter=",",fmt="%s")
 
 
 

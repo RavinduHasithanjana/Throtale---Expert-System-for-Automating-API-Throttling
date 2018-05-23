@@ -32,11 +32,11 @@ def regressionalgo (cc):
 
     clf = svm.SVR()
     clf.fit(X_train,y_train)
-    SVR(C=1.0, cache_size=200, coef0=0.0, degree=3, epsilon=0.1, gamma='0.2',
-        kernel='rbf', max_iter=-1, shrinking=True, tol=0.001, verbose=False)
+    SVR(C=1.0, gamma='0.2', kernel='rbf')
     pred = clf.predict(X_test)
+    pic = clf.predict(1.515155085000000000e+09)
 
-    # print(pred)
+    print(pic)
     mean = mean_squared_error(y_test, pred)
     print(mean)
     savingmodel(clf)
