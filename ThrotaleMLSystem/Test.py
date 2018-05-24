@@ -16,36 +16,40 @@ from LogsExtraction import  LogsExtraction
 #     readcsv()
 
 def readcsv ():
-    df = pd.read_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv', header=None,dtype=str)
+    df = pd.read_csv('/Users/ravinduperera/Desktop/GSOC_2017/Dev/Throtale---Expert-System-for-Automating-API-Throttling/LogsExtraction/ExtractedDataMon.csv', header=None,dtype=str)
     print(df)
-    cc = df.groupby([0]).size().reset_index(name='counts')
-    print(cc)
-    # regressionalgo(cc)
+    cc = df.groupby([5]).size().reset_index(name='counts')
+    df1 = df.drop_duplicates(subset=[5])
+
+    print(df1)
+    regressionalgo(cc,df1)
 
 
-def regressionalgo (cc):
-    data = numpy.array(cc.iloc[:, 0]).astype(float)
+def regressionalgo (cc,df):
+    data = numpy.array(df.iloc[:,:5]).astype(float)
     target = numpy.array(cc.iloc[:, -1]).astype(float)
+    print(data)
     print(data.shape)
-    # print(target.shape)
-    # #
+
+    print(target.shape)
+
     X = data[:10000]
     y = target[:10000]
 
     X_train, X_test, y_train, y_test = train_test_split(
-        X.reshape(-1, 1), y, test_size=0.5, random_state=0)
+        X.reshape(-1, 5), y, test_size=0.5, random_state=0)
 
     clf = svm.SVR()
     clf.fit(X_train,y_train)
     svm.SVR(C=1,kernel='rbf',gamma=0.5)
-    pred = clf.predict(X_test)
-    prd = clf.predict(1.513444888000000000e+09)
+    # pred = clf.predict(X_test)
+    prd = clf.predict([[16., 12., 22., 12., 24.]])
     print(prd)
-
-    # print(pred)
-    # acc = accuracy_score(pred, y_test)
-    # print(acc)
-    savingmodel(clf)
+    #
+    # # print(pred)
+    # # acc = accuracy_score(pred, y_test)
+    # # print(acc)
+    # savingmodel(clf)
 
 def savingmodel(clf):
     print("")
