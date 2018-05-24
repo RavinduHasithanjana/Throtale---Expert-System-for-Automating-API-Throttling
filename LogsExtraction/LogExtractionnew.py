@@ -1,5 +1,6 @@
 # copyright reserver for Throtale system
 # Authour Ravindu Perera
+import csv
 import re
 import datetime
 import time
@@ -27,15 +28,20 @@ def LogsExtraction():
      # print(match)
      str_time = match.group()
      t1 = strptime(str_time, "%d/%b/%Y:%H:%M:%S")
-     print(t1.minute)
+     # print(t1.minute)
      arrayYear.append(t1.year)
      arrayMonth.append(t1.month)
      arrayDay.append(t1.day)
      arrayHour.append(t1.hour)
      arrayMin.append(t1.minute)
      arraySec.append(t1.second)
+     ls = float(time.mktime(t1.timetuple()))
+     arrayone.append(ls)
 
     print(arraySec)
+
+    print(arrayone)
+
      # ls = float(time.mktime(t1.timetuple()))
 
     #  # val = float(ls)
@@ -49,12 +55,15 @@ def LogsExtraction():
     # print(arrayone)
     # # print("print")
     # # print(arrayone)
+    arrall =[]
     for i in range(len(arrayDay)):
-     print(arrayDay[i],arrayMonth[i],arrayMin[i],arraySec[i])
+     all = arrayDay[i],arrayMonth[i],arrayHour[i],arrayMin[i],arraySec[i],arrayone[i]
+     # print(all)
+     arrall.append(all)
 
-    a = numpy.asarray([arrayDay, arrayHour, arrayMin])
-    numpy.savetxt("ExtractedDataMon.csv", a, delimiter=",")
-    # numpy.savetxt("ExtractedDataDay.csv", arrayDay, delimiter=",", fmt="%s")
+
+    numpy.savetxt("ExtractedDataMon.csv", arrall, delimiter=",", fmt="%s")
+  # numpy.savetxt("ExtractedDataDay.csv", arrayDay, delimiter=",", fmt="%s")
     # numpy.savetxt("ExtractedDataHour.csv", arrayHour, delimiter=",", fmt="%s")
     # numpy.savetxt("ExtractedDataMin.csv", arrayMin, delimiter=",", fmt="%s")
     # numpy.savetxt("ExtractedDataSec.csv", arraySec, delimiter=",", fmt="%s")

@@ -16,13 +16,11 @@ from LogsExtraction import  LogsExtraction
 #     readcsv()
 
 def readcsv ():
-    df = pd.read_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv', header=None)
-    day = pd.read_csv('/Users/ravinduperera/Desktop/GSOC_2017/Dev/Throtale---Expert-System-for-Automating-API-Throttling/LogsExtraction/ExtractedDataDay.csv', header=None)
-    print(day)
-    # df.groupby([0]).size().reset_index(name="count").to_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv')
+    df = pd.read_csv('/Users/ravinduperera/Desktop/IIT/Research/Development/Dev/csvfile.csv', header=None,dtype=str)
+    print(df)
     cc = df.groupby([0]).size().reset_index(name='counts')
     print(cc)
-    regressionalgo(cc)
+    # regressionalgo(cc)
 
 
 def regressionalgo (cc):
