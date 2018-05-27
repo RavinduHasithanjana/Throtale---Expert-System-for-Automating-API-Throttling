@@ -57,9 +57,10 @@ def regressionalgo (cc,df):
     # # acc = accuracy_score(pred, y_test)
     # # print(acc)
     # savingmodel(clf)
+    savingmodel(clf)
 
 def savingmodel(clf):
     print("")
-    joblib.dump(clf, 'throtale.pkl')
+    joblib.dump(clf, 'Final.pkl')
 
 if __name__ == '__main__': readcsv()
