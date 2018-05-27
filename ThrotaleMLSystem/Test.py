@@ -5,7 +5,7 @@ import numpy
 from sklearn.svm import SVR
 from sklearn import svm
 from sklearn.model_selection import train_test_split,GridSearchCV
-from sklearn.metrics import explained_variance_score, accuracy_score
+from sklearn.metrics import explained_variance_score, accuracy_score, median_absolute_error
 from sklearn.metrics import mean_squared_error
 from sklearn.externals import joblib
 from LogsExtraction import  LogsExtraction
@@ -47,7 +47,11 @@ def regressionalgo (cc,df):
     print(prd)
 
     mean = mean_squared_error(y_test, pred)
+    print("")
     print(mean)
+    ex = median_absolute_error(y_test, pred)
+    print("")
+    print(ex)
     #
     # # print(pred)
     # # acc = accuracy_score(pred, y_test)
