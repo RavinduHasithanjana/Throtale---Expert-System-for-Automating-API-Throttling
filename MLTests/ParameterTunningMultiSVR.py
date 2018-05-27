@@ -36,7 +36,16 @@ def parameterTunning (formatData):
     print(clf.best_params_)
     print("/////////////////")
 
+
     print()
+
+    # means = clf.cv_results_['mean_test_score']
+    # stds = clf.cv_results_['std_test_score']
+    # for mean, std, params in zip(means, stds, clf.cv_results_['params']):
+    #     print("%0.3f (+/-%0.03f) for %r"
+    #           % (mean, std * 2, params))
+
+
 def savingModel ():
     print()
 

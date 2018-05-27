@@ -1,19 +1,13 @@
-# copyright reserver for Throtale system
-# Authour Ravindu Perera
+#paramter tunning fo the new datset with multiple features
+
 import pandas as pd
 import numpy
+from sklearn.metrics import mean_squared_error
 from sklearn.svm import SVR
+from sklearn.svm import LinearSVR
 from sklearn import svm
 from sklearn.model_selection import train_test_split,GridSearchCV
-from sklearn.metrics import explained_variance_score, accuracy_score
-from sklearn.metrics import mean_squared_error
-from sklearn.externals import joblib
-from LogsExtraction import  LogsExtraction
 
-# def logsextraction():
-#     LogsExtraction.LogsExtraction()
-#     print("done")
-#     readcsv()
 
 def readcsv ():
     df = pd.read_csv('/Users/ravinduperera/Desktop/GSOC_2017/Dev/Throtale---Expert-System-for-Automating-API-Throttling/LogsExtraction/ExtractedDataMon.csv', header=None,dtype=str)
@@ -39,23 +33,31 @@ def regressionalgo (cc,df):
     X_train, X_test, y_train, y_test = train_test_split(
         X.reshape(-1, 5), y, test_size=0.5, random_state=0)
 
-    clf = svm.SVR()
-    clf.fit(X_train,y_train)
-    svm.SVR(C=1,kernel='rbf',gamma=0.5)
+    clf = svm.LinearSVR()
+    clf.fit(X_train, y_train)
+    LinearSVR(C=1.0, dual=True, epsilon=0.0, fit_intercept=True,
+     intercept_scaling=1.0, loss='epsilon_insensitive', max_iter=1000,
+     random_state=0, tol=0.0001, verbose=0)
     pred = clf.predict(X_test)
-    prd = clf.predict([[16., 12., 22., 12., 24.]])
-    print(prd)
 
+    # print(clf.best_params_)
+    print("/////////////////")
     mean = mean_squared_error(y_test, pred)
     print(mean)
-    #
-    # # print(pred)
-    # # acc = accuracy_score(pred, y_test)
-    # # print(acc)
-    # savingmodel(clf)
 
-def savingmodel(clf):
-    print("")
-    joblib.dump(clf, 'throtale.pkl')
+
+    print()
+
+    # means = clf.cv_results_['mean_test_score']
+    # stds = clf.cv_results_['std_test_score']
+    # for mean, std, params in zip(means, stds, clf.cv_results_['params']):
+    #     print("%0.3f (+/-%0.03f) for %r"
+    #           % (mean, std * 2, params))
+
+
+def savingModel ():
+    print()
+
+
 
 if __name__ == '__main__': readcsv()
