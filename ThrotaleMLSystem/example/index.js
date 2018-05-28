@@ -8,8 +8,10 @@ var path = require('path');
 var fs = require('fs');
 var cron = require('node-cron');
 var spawn = require('child_process').spawn;
-py    = spawn('python', ['test.py',"hlls"])
-data = [1,2,3,4,5,6,7,8,9]
+py    = spawn('python', ['test.py',"hlls"]);
+data = [1,2,3,4,5,6,7,8,9];
+var PythonShell = require('python-shell');
+const axios = require('axios');
 
 
 
@@ -23,16 +25,32 @@ var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {
 app.use(morgan('combined', {stream: accessLogStream}))
 
 // call the python.script
+var PythonShell = require('python-shell');
+
+// PythonShell.run('../Throtale.py', function (err) {
+//   if (err) throw err;
+//   console.log('finished');
+// });
+
+
+py = spawn('python', ['../Throtale.py',"hlls","mills"])
+py.stdout.on('data', function(data){
+  console.log(data.toString());
+
+});
 
 
 // writing the corn job
 cron.schedule('* * * * * *', function(){
-  py = spawn('python', ['test.py',"hlls","mills"])
-  py.stdout.on('data', function(data){
-    console.log(data.toString());
 
-  });
-  console.log();
+  axios.get('http://0.0.0.0:5000/')
+    .then(response => {
+  //     console.log(data);
+      console.log(response.data);
+    })
+    .catch(error => {
+      console.log(error);
+    });
 
 });
 
